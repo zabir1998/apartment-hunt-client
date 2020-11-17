@@ -1,0 +1,11 @@
+.logo{
+    position: absolute;
+width: 150px;
+height: 47px;
+left: 25px;
+top: 14px;
+}
+.lg{
+    color: white !important;
+    background-color: #275a53;
+}
