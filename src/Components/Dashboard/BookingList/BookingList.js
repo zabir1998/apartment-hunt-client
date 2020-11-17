@@ -1,22 +1,14 @@
 import React, { useState } from "react";
 import { useContext } from "react";
-import { useEffect } from "react";
 import { UserContext } from "../../../App";
 import BookingListCard from "../BookingListCard/BookingListCard";
 import Sidebar from "../Sidebar/Sidebar";
 
-const ServiceList = () => {
-  const [servicesList, setServicesList] = useState([]);
+const BookingList = () => {
+  const [bookingsList, setbookingsList] = useState([]);
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
-  useEffect(() => {
-    fetch(
-      "https://polar-springs-72792.herokuapp.com/servicesOrdered?email=" +
-        loggedInUser.email
-    )
-      .then((res) => res.json())
-      .then((data) => setServicesList(data));
-  }, []);
+ 
   const containerStyle = {
     backgroundColor: "#F4F7FC",
     border: "none",
@@ -27,12 +19,12 @@ const ServiceList = () => {
       <div className="col-md-10 p-4 pr-5 ml-auto">
         <div className="row mb-5 justify-content-md-center">
           <center>
-            <h1 className="mt-5 text-center">Ordered Services</h1>
+            <h1 className="mt-5 text-center">Bookings</h1>
           </center>
         </div>
         <div className="row">
-          {bookingList.map((bknglst) => (
-            <BookingListCard key={bknglst._id} booking={bknglst}>
+          {bookingsList.map((bknglst) => (
+            <BookingListCard key={bknglst._id} bookings={bknglst}>
               {bknglst.orderedService}
             </BookingListCard>
           ))}
@@ -42,4 +34,4 @@ const ServiceList = () => {
   );
 };
 
-export default ServiceList;
+export default BookingList;

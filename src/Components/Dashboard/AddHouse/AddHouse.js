@@ -47,17 +47,17 @@ import Sidebar from '../Sidebar/Sidebar';
           formData.append("name", info.name);
           formData.append("description", info.description);
 
-          fetch('https://polar-springs-72792.herokuapp.com/addService', {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert("New House Added Successfully");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    //       fetch('https://polar-springs-72792.herokuapp.com/addService', {
+    //   method: "POST",
+    //   body: formData,
+    // })
+      // .then((response) => response.json())
+      // .then((data) => {
+      //   alert("New House Added Successfully");
+      // })
+      // .catch((error) => {
+      //   console.error(error);
+      // });
   };
 
     const containerStyle = {
@@ -107,7 +107,7 @@ import Sidebar from '../Sidebar/Sidebar';
                 placeholder="Upload Image"
               />
             </div>
-            <button type="submit" className="btn btn-success">
+            <button type="submit" className="btn btn-success" style={{backgroundColor:"#275A53"}}>
               Submit
             </button>
           </form>

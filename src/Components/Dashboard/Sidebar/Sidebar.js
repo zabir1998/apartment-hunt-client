@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-import logo from "../../../images/logos/logo.png";
+import logo from "../../../images/logos/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
@@ -33,7 +33,7 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <Link to="/">
-          <img style={{ marginBottom: 30 }} src={logo} alt="" />
+          <img style={{ marginBottom: 30,width:150 }} src={logo} alt="" />
         </Link>
 
         <li>

@@ -30,15 +30,15 @@ const Pics = () => {
                 <div>
                     <Spics></Spics>
                     <div className="d-flex justify-content-between">
-                    <h2>{name}</h2>
-                    <h2>${price}</h2>
+                    <h2 className="dtlspics">{name}</h2>
+                    <h2 className="dtlspics">${price}</h2>
                     </div>
                     
-                    <p>3000 sq-ft., 3 Bedroom, Semi-furnished, Luxurious, South facing Apartment for Rent in Rangs Malancha, Melbourne.</p>
-                    <h2>Price Details-</h2>
-                    <p>Rent/Month:{price} (negotiable) Service Charge : 8,000/= Tk per month, subject to change Security Deposit : 3 month’s rent Flat Release Policy : 3 months earlier notice required</p>
-                    <h2>Property Details-</h2>
-                    <p>
+                    <p className="writing">3000 sq-ft., 3 Bedroom, Semi-furnished, Luxurious, South facing Apartment for Rent in Rangs Malancha, Melbourne.</p>
+                    <h2 className="dtlspics">Price Details-</h2>
+                    <p className="writing">Rent/Month:{price} (negotiable) Service Charge : 8,000/= Tk per month, subject to change Security Deposit : 3 month’s rent Flat Release Policy : 3 months earlier notice required</p>
+                    <h2 className="dtlspics">Property Details-</h2>
+                    <p className="writing">
                     Address & Area : Rangs Malancha, House-68, Road-6A (Dead End Road), Dhanmondi Residential Area.
 Flat Size : 3000 Sq Feet.
 Floor :  A5 (5th Floor) (6 storied Building ) (South Facing Unit)
@@ -71,7 +71,7 @@ Additional Facilities : a. Electricity with full generator load, b. Central Gas 
    
    {errors.exampleRequired && <span>Message is required</span>}<br></br>
    
-   <input type="submit" style={{width:400,marginBottom:10,boxShadow:40,borderRadius:5,color:"white",backgroundColor:"#275A53"}} />
+   <input type="submit" style={{width:400,marginBottom:10,boxShadow:40,borderRadius:5,color:"white",backgroundColor:"#275A53",padding:10}} />
  </form>
             </div>
         </section>

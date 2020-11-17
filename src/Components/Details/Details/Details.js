@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Home/Navbar/Navbar';
+import NavbarAh from '../../Home/NavbarAh/NavbarAh';
 import DetailsMain from '../DetailsMain/DetailsMain';
 import Pics from '../Pics/Pics';
 
@@ -7,7 +7,7 @@ import Pics from '../Pics/Pics';
 const Details = () => {
     return (
         <div className="dtls">
-            <Navbar></Navbar>
+            <NavbarAh></NavbarAh>
             <DetailsMain></DetailsMain>
             <Pics></Pics>
         </div>
